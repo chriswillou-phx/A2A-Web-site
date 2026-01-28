@@ -111,7 +111,10 @@ h2{
 }
 
 .panel{
-  background: var(--soft);
+  background-color: var(--soft);
+  background-image: url("pattern.png");
+  background-repeat: repeat;
+  background-size: 320px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 22px 22px;
