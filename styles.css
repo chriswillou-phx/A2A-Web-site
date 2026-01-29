@@ -193,3 +193,35 @@ footer{
   p, li{ font-size: 17px; }
   .panel{ padding: 18px 16px; }
 }
+
+@media (max-width: 720px){
+  /* give the page more usable width */
+  .container{
+    padding: 28px 16px 56px;
+  }
+
+  /* About: stack photo above text */
+  .about-layout{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* center photo + keep it intentionally sized */
+  .about-photo{
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* improve mobile readability */
+  .panel p{
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  /* add breathing room between paragraphs */
+  .panel p + p{
+    margin-top: 14px;
+  }
+}
