@@ -169,6 +169,15 @@ li{
   margin: 0 0 10px;
 }
 
+.bullet-list{
+margin: 0;
+padding-left: 18px;
+}
+
+.bullet-list li{
+margin-bottom: 10px;
+}
+
 /* Links */
 a{
   color: var(--teal);
