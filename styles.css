@@ -103,12 +103,12 @@ h1{
   inset: 0;
   background-image: url("hero_pattern_bg.png");
   background-repeat: no-repeat;
-  background-size: 640px;          /* use a power-of-2 size */
-  background-position: 0 0;        /* anchor the tile */
+  background-position: center;
+  background-size: cover;
   opacity: 0.10;
   pointer-events: none;
-  transform: translateZ(0);        /* reduces GPU seam artifacts */
 }
+
 
 
 /* keep hero content above the overlay */
