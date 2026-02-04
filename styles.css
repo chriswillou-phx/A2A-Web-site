@@ -282,3 +282,16 @@ footer{
     margin-top: 14px;
   }
 }
+
+@media (max-width: 720px){
+  .hero{
+    padding: 34px 18px;
+    border-radius: 16px;
+    margin-bottom: 34px;
+  }
+
+  .hero::after{
+    background-size: 620px;
+    opacity: 0.09;
+  }
+}
