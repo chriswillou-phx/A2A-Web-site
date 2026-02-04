@@ -101,8 +101,8 @@ h1{
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("pattern_seamless.png");
-  background-repeat: repeat;
+  background-image: url("hero_pattern_bg.png");
+  background-repeat: no-repeat;
   background-size: 640px;          /* use a power-of-2 size */
   background-position: 0 0;        /* anchor the tile */
   opacity: 0.10;
