@@ -103,7 +103,7 @@ h1{
   inset: 0;
   background-image: url("pattern.png");
   background-repeat: repeat;
-  background-size: 512px;          /* use a power-of-2 size */
+  background-size: 514px;          /* use a power-of-2 size */
   background-position: 0 0;        /* anchor the tile */
   opacity: 0.10;
   pointer-events: none;
