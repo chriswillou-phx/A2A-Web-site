@@ -79,6 +79,54 @@ h1{
   margin: 0 0 14px;
 }
 
+/* Hero (color + subtle pattern) */
+.hero{
+  position: relative;
+  padding: 56px 48px;
+  border-radius: 20px;
+  margin: 10px 0 48px;
+  border: 1px solid var(--line);
+
+  /* soft teal wash */
+  background: linear-gradient(
+    180deg,
+    rgba(45,170,168,0.12),
+    rgba(45,170,168,0.03)
+  );
+
+  overflow: hidden; /* keeps pattern inside rounded corners */
+}
+
+/* faint pattern overlay */
+.hero::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("pattern.png");
+  background-repeat: repeat;
+  background-size: 520px;  /* larger = subtler */
+  opacity: 0.10;           /* lower = subtler */
+  pointer-events: none;
+}
+
+/* keep hero content above the overlay */
+.hero > *{
+  position: relative;
+  z-index: 1;
+}
+
+/* make the tagline pop slightly inside hero */
+.hero .tagline{
+  margin-bottom: 18px;
+}
+
+/* tighten subhead spacing inside hero */
+.hero .subhead{
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+
 .tagline{
   font-size: 20px;
   color: var(--teal);
